@@ -1,0 +1,10 @@
+{
+  "printWidth": 140,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "tabWidth": 2,
+  "semi": false,
+  "arrowParens": "always",
+  "plugins": ["eslint-plugin-prettier", "prettier-plugin-tailwindcss"]
+}
