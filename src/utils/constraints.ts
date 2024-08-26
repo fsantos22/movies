@@ -6,4 +6,4 @@ export enum categoryOptions {
 }
 
 export const BOOKMARKS_INITIAL_STATE: Bookmarks = { movies: [], tvshows: [] }
-export const BOOKMARKS_INITIAL_STATE_STRINGFIED: string = JSON.stringify({ movies: [], tvshows: [] })
+export const BOOKMARKS_INITIAL_STATE_STRINGFIED: string = JSON.stringify(BOOKMARKS_INITIAL_STATE)
