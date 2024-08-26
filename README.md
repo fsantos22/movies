@@ -14,7 +14,6 @@ Este é um aplicativo de catalogo de filmes e series, onde voce pode consultar e
 
 - **Favoritos ("/bookmarks")**: Sao exibidos todos os itens marcados como favoritos (Filmes e series juntos)
 
-
 ## Recursos
 
 - Listagem de filmes e séries
@@ -29,7 +28,7 @@ Este é um aplicativo de catalogo de filmes e series, onde voce pode consultar e
 
 Certifique-se de que você tenha os seguinte itens instalado:
 
-- [Node.js](https://nodejs.org/)
+- [Node.js](https://nodejs.org/) (^18.18)
 
 - [npm](https://www.npmjs.com/)
 
@@ -49,11 +48,12 @@ npm install
 ```
 
 ### Executando o aplicativo
+
 3. crie um arquivo .env.local na raiz do projeto e adicione as seguintes variaveis:
 
 ```sh
-WORDPRESS_API_URL="https://your-endpoint-here.com/graphql"
-WORDPRESS_AUTH_TOKEN="your access token"
+NEXT_PUBLIC_WORDPRESS_API_URL="https://your-endpoint-here.com/graphql"
+NEXT_PUBLIC_WORDPRESS_AUTH_TOKEN="your access token"
 ```
 
 4. iniciar a aplicacao:
