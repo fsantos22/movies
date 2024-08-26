@@ -5,7 +5,7 @@ import { FaFilm, FaStar } from 'react-icons/fa'
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 flex w-[99vw] justify-between bg-[#0D0D0D]/60 p-4 backdrop-blur-sm">
-      <div className="flex gap-4 text-2xl">
+      <div className="flex gap-4 text-2xl items-center">
         <FaFilm className="h-8 w-8 p-1" />
         <h1>MOVIES</h1>
       </div>
