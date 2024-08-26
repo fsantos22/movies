@@ -28,7 +28,6 @@ describe('Movies Component', () => {
       isLoading: true,
       fetchData: mockFetchData,
     })
-
     ;(useBookmarks as unknown as jest.Mock).mockReturnValue({
       bookmarks: [],
       updateBookmarks: mockUpdateBookmarks,

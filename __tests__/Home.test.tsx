@@ -25,19 +25,16 @@ describe('Home Page', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-
     ;(useBookmarks as unknown as jest.Mock).mockReturnValue({
       bookmarks: mockBookmarks.bookmarks,
       updateBookmarks: mockUpdateBookmarks,
     })
-
     ;(useFetch as unknown as jest.Mock).mockReturnValue({
       movies: [],
       tvshows: [],
       isLoading: false,
       fetchData: mockFetchData,
     })
-
     ;(checkBookmark as jest.Mock).mockImplementation(mockCheckBookmark)
   })
 

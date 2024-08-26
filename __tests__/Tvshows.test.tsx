@@ -28,7 +28,6 @@ describe('Tvshows Page', () => {
       isLoading: true,
       fetchData: mockFetchData,
     })
-
     ;(useBookmarks as unknown as jest.Mock).mockReturnValue({
       bookmarks: [],
       updateBookmarks: mockUpdateBookmarks,
