@@ -21,7 +21,7 @@ export default function Bookmarks() {
     const isBookmarked = checkBookmark(bookmarks, tvshow, categoryOptions.TVSHOWS)
     return <CardComponent key={key} item={tvshow} bookmarked={isBookmarked} category={categoryOptions.TVSHOWS} />
   })
-  const isEmpty = renderMovies.length === 0 && renderTvshows.length === 0
+  const isEmpty = renderMovies?.length === 0 && renderTvshows?.length === 0
 
   useEffect(() => {
     fetchData(GET_DATA())

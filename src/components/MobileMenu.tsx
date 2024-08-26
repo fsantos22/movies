@@ -13,7 +13,7 @@ const MobileMenu: React.FC = () => {
   return (
     <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
       <DropdownMenuTrigger asChild>
-        <Button aria-label="Mobile menu button" variant="ghost">
+        <Button aria-label="Mobile menu button" variant="ghost" className="p-0">
           {isOpen ? <FaTimes className="h-5 w-5" /> : <FaAlignRight className="h-5 w-5" />}
         </Button>
       </DropdownMenuTrigger>
