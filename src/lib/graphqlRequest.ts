@@ -1,9 +1,9 @@
 export async function graphqlRequest(query: { query: string }) {
   try {
-    const url = 'https://testeweb.pecege.com/graphql'
+    const url = process.env.NEXT_PUBLIC_WORDPRESS_API_URL as string
     const headers = {
       'Content-type': 'application/json',
-      Authorization: process.env.WORDPRESS_AUTH_TOKEN as string,
+      Authorization: process.env.NEXT_PUBLIC_WORDPRESS_AUTH_TOKEN as string,
     }
     const res = await fetch(url, {
       headers,
