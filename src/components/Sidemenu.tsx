@@ -32,7 +32,7 @@ const Sidemenu: React.FC = () => {
             return (
               <NavigationMenuItem key={key} className="group/item text-zinc-500">
                 <Link href={item.link} legacyBehavior passHref>
-                  <NavigationMenuLink className="flex gap-2 items-center group-hover/item:text-orange-500">
+                  <NavigationMenuLink className="flex items-center gap-2 group-hover/item:text-orange-500">
                     {item.icon}
                     <div className="flex cursor-pointer items-center gap-2 group-hover/item:text-orange-500">{item.label}</div>
                   </NavigationMenuLink>
