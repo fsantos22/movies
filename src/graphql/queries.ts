@@ -6,6 +6,7 @@ export const GET_DATA = (limit?: number) => {
       advanced_custom_fields {
         releaseDate
         title
+        gender
         img {
           sourceUrl
         }
@@ -18,6 +19,7 @@ export const GET_DATA = (limit?: number) => {
       advanced_custom_fields {
         releaseDate
         title
+        gender
         img {
           sourceUrl
         }
@@ -35,6 +37,7 @@ export const GET_MOVIES = () => {
                     advanced_custom_fields {
                       releaseDate
                       title
+                      gender
                       img {
                         sourceUrl
                       }
@@ -52,6 +55,7 @@ export const GET_TVSHOWS = () => {
         advanced_custom_fields {
           releaseDate
           title
+          gender
           img {
             sourceUrl
           }

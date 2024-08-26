@@ -30,13 +30,11 @@ const Sidemenu: React.FC = () => {
         <NavigationMenuList className="flex flex-col gap-5">
           {menuItems.map((item, key) => {
             return (
-              <NavigationMenuItem key={key} className="group/item flex gap-1 text-zinc-500">
+              <NavigationMenuItem key={key} className="group/item text-zinc-500">
                 <Link href={item.link} legacyBehavior passHref>
-                  <NavigationMenuLink className="group-hover/item:text-orange-500">
-                    <div className="flex cursor-pointer items-center gap-2 group-hover/item:text-orange-500">
-                      {item.icon}
-                      {item.label}
-                    </div>
+                  <NavigationMenuLink className="flex gap-2 items-center group-hover/item:text-orange-500">
+                    {item.icon}
+                    <div className="flex cursor-pointer items-center gap-2 group-hover/item:text-orange-500">{item.label}</div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>

@@ -3,6 +3,7 @@ export type Data = {
   advanced_custom_fields: {
     releaseDate: string
     title: string
+    gender: string
     img: {
       sourceUrl: string
     }
