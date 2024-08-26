@@ -6,13 +6,6 @@
   },
   "plugins": ["@typescript-eslint"],
   "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:@typescript-eslint/recommended"],
-  "overrides": [
-    {
-      "files": ["test/**"],
-      "plugins": [],
-      "extends": [],
-    }
-  ],
   "rules": {
     "@typescript-eslint/no-unused-vars": "error",
     // to enforce using type for object type definitions, can be type or interface 
